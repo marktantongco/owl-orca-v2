@@ -287,7 +287,7 @@ function NavBar() {
             </span>
             <Badge
               variant="outline"
-              className="text-[10px] sm:text-xs border-owl-cyan/40 text-owl-cyan bg-owl-cyan/10"
+              className="text-[11px] sm:text-xs border-owl-cyan/40 text-owl-cyan bg-owl-cyan/10"
             >
               v8.0
             </Badge>
@@ -299,7 +299,7 @@ function NavBar() {
               <a
                 key={item.href}
                 href={item.href}
-                className="px-3 py-1.5 text-sm text-muted-foreground hover:text-owl-cyan transition-colors rounded-lg hover:bg-white/5"
+                className="px-3 py-1.5 text-sm text-foreground/70 hover:text-owl-cyan transition-colors rounded-lg hover:bg-white/5"
               >
                 {item.label}
               </a>
@@ -309,7 +309,7 @@ function NavBar() {
               href="https://github.com/marktantongco/owl-orca"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-muted-foreground hover:text-white transition-colors"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-foreground/70 hover:text-white transition-colors"
             >
               <GithubIcon className="w-4 h-4" />
               GitHub
@@ -318,7 +318,7 @@ function NavBar() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden p-2 text-muted-foreground hover:text-white"
+            className="md:hidden p-2 text-foreground/70 hover:text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
@@ -336,7 +336,7 @@ function NavBar() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
-                className="block px-3 py-2 text-sm text-muted-foreground hover:text-owl-cyan transition-colors rounded-lg hover:bg-white/5"
+                className="block px-3 py-2 text-sm text-foreground/70 hover:text-owl-cyan transition-colors rounded-lg hover:bg-white/5"
               >
                 {item.label}
               </a>
@@ -345,7 +345,7 @@ function NavBar() {
               href="https://github.com/marktantongco/owl-orca"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 py-2 text-sm text-muted-foreground hover:text-white transition-colors"
+              className="flex items-center gap-2 px-3 py-2 text-sm text-foreground/70 hover:text-white transition-colors"
             >
               <GithubIcon className="w-4 h-4" />
               GitHub
@@ -386,7 +386,7 @@ function HeroSection() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-6 leading-relaxed">
+        <p className="text-xl sm:text-2xl md:text-3xl text-foreground/80 max-w-2xl mx-auto mb-6 leading-relaxed">
           AI Gateway with{" "}
           <span className="text-owl-cyan font-semibold">Stream Racing</span>,{" "}
           <span className="text-owl-green font-semibold">Protocol Translation</span> &{" "}
@@ -394,7 +394,7 @@ function HeroSection() {
         </p>
 
         {/* Tagline */}
-        <p className="text-sm sm:text-base text-muted-foreground/70 mb-8">
+        <p className="text-sm sm:text-base text-foreground/60 mb-8">
           Free AI for everyone. Race multiple providers. First byte wins.
         </p>
 
@@ -402,7 +402,7 @@ function HeroSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <a
             href="#install"
-            className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-owl-cyan/10 border border-owl-cyan/30 text-owl-cyan hover:bg-owl-cyan/20 hover:border-owl-cyan/50 transition-all hover:shadow-[0_0_20px_rgba(0,212,255,0.2)]"
+            className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-owl-cyan/10 border border-owl-cyan/30 text-owl-cyan hover:bg-owl-cyan/20 hover:border-owl-cyan/50 transition-all hover:shadow-[0_0_20px_rgba(0,212,255,0.2)] hover:border-gradient"
           >
             <Terminal className="w-4 h-4" />
             Quick Install
@@ -412,7 +412,7 @@ function HeroSection() {
             href="https://github.com/marktantongco/owl-orca"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-muted-foreground hover:text-white hover:bg-white/10 transition-all"
+            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/14 text-foreground/60 hover:text-white hover:bg-white/10 transition-all"
           >
             <GithubIcon className="w-4 h-4" />
             View on GitHub
@@ -421,16 +421,16 @@ function HeroSection() {
 
         {/* Badges */}
         <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
-          <Badge variant="outline" className="border-owl-cyan/30 text-owl-cyan bg-owl-cyan/5 text-xs">
+          <Badge variant="outline" className="border-owl-cyan/30 text-owl-cyan bg-owl-cyan/5 text-[11px]">
             v8.0.0
           </Badge>
-          <Badge variant="outline" className="border-owl-green/30 text-owl-green bg-owl-green/5 text-xs">
+          <Badge variant="outline" className="border-owl-green/30 text-owl-green bg-owl-green/5 text-[11px]">
             MIT License
           </Badge>
-          <Badge variant="outline" className="border-owl-magenta/30 text-owl-magenta bg-owl-magenta/5 text-xs">
+          <Badge variant="outline" className="border-owl-magenta/30 text-owl-magenta bg-owl-magenta/5 text-[11px]">
             8GB RAM Optimized
           </Badge>
-          <Badge variant="outline" className="border-yellow-400/30 text-yellow-400 bg-yellow-400/5 text-xs">
+          <Badge variant="outline" className="border-yellow-400/30 text-yellow-400 bg-yellow-400/5 text-[11px]">
             Python 3.10+
           </Badge>
         </div>
@@ -456,7 +456,7 @@ function ArchitectureSection() {
     <section
       id="architecture"
       ref={ref}
-      className="relative py-20 sm:py-28 px-4"
+      className="relative py-20 sm:py-28 px-4 scroll-mt-20"
     >
       <div
         className={`max-w-6xl mx-auto transition-all duration-1000 ${
@@ -472,7 +472,7 @@ function ArchitectureSection() {
               Architecture
             </span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-foreground/70 max-w-2xl mx-auto">
             OWL-ORCA routes AI requests through a local proxy and router stack, racing multiple
             free-tier providers simultaneously. The first provider to respond wins.
           </p>
@@ -518,15 +518,15 @@ function ArchitectureSection() {
                 </div>
               </div>
               <p className="text-sm font-bold text-owl-cyan">Orca Router</p>
-              <p className="text-xs text-muted-foreground">Port 60001</p>
+              <p className="text-xs text-foreground/60">Port 60001</p>
               <div className="mt-2 space-y-1">
-                <div className="text-[10px] px-2 py-0.5 rounded bg-owl-cyan/10 text-owl-cyan inline-block mr-1">
+                <div className="text-xs px-2 py-0.5 rounded bg-owl-cyan/15 text-owl-cyan inline-block mr-1 drop-shadow-[0_0_4px_rgba(0,212,255,0.3)]">
                   Radix Tree
                 </div>
-                <div className="text-[10px] px-2 py-0.5 rounded bg-owl-green/10 text-owl-green inline-block mr-1">
+                <div className="text-xs px-2 py-0.5 rounded bg-owl-green/15 text-owl-green inline-block mr-1 drop-shadow-[0_0_4px_rgba(16,185,129,0.3)]">
                   Stream Racer
                 </div>
-                <div className="text-[10px] px-2 py-0.5 rounded bg-owl-magenta/10 text-owl-magenta inline-block">
+                <div className="text-xs px-2 py-0.5 rounded bg-owl-magenta/15 text-owl-magenta inline-block drop-shadow-[0_0_4px_rgba(224,64,251,0.3)]">
                   Translator
                 </div>
               </div>
@@ -590,20 +590,20 @@ function FlowNode({
         className={`flex items-center justify-center mb-1 ${small ? "" : "mb-2"}`}
       >
         <div
-          className={`${small ? "w-6 h-6" : "w-8 h-8"} rounded-lg bg-current/10 flex items-center justify-center [&>svg]:text-current`}
+          className={`${small ? "w-6 h-6" : "w-8 h-8"} rounded-lg bg-current/20 flex items-center justify-center [&>svg]:text-current drop-shadow-[0_0_6px_currentColor]`}
         >
           {icon}
         </div>
       </div>
       <p className={`${small ? "text-xs" : "text-sm"} font-semibold`}>{label}</p>
-      <p className="text-[10px] text-muted-foreground">{sublabel}</p>
+      <p className="text-xs text-foreground/60">{sublabel}</p>
     </div>
   );
 }
 
 function FlowArrow() {
   return (
-    <div className="flex items-center justify-center text-muted-foreground/40">
+    <div className="flex items-center justify-center text-owl-cyan/50 flow-arrow-animated">
       <div className="hidden md:block">
         <ArrowRight className="w-5 h-5" />
       </div>
@@ -624,7 +624,7 @@ function StreamRacerSection() {
     <section
       id="streamracer"
       ref={ref}
-      className="relative py-20 sm:py-28 px-4 overflow-hidden"
+      className="relative py-20 sm:py-28 px-4 overflow-hidden scroll-mt-20"
     >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,212,255,0.04)_0%,transparent_60%)] pointer-events-none" />
@@ -643,7 +643,7 @@ function StreamRacerSection() {
               StreamRacer
             </span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-foreground/70 max-w-2xl mx-auto">
             Fire requests to ALL eligible providers simultaneously. The first byte wins — all other
             streams are immediately cancelled. Zero wasted latency.
           </p>
@@ -681,7 +681,7 @@ function StreamRacerSection() {
             <Trophy className="w-5 h-5 text-owl-cyan shrink-0" />
             <div>
               <p className="text-sm font-semibold text-owl-cyan">Copilot wins the race!</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-sm text-foreground/70">
                 Stream translated from OpenAI SSE → Client. Loser streams cancelled.
               </p>
             </div>
@@ -720,16 +720,16 @@ function StreamRacerSection() {
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg ${
                   item.color === "cyan"
-                    ? "bg-owl-cyan/10 text-owl-cyan border border-owl-cyan/30"
+                    ? "bg-owl-cyan/20 text-owl-cyan border border-owl-cyan/30 icon-glow-cyan"
                     : item.color === "magenta"
-                      ? "bg-owl-magenta/10 text-owl-magenta border border-owl-magenta/30"
-                      : "bg-owl-green/10 text-owl-green border border-owl-green/30"
+                      ? "bg-owl-magenta/20 text-owl-magenta border border-owl-magenta/30 icon-glow-magenta"
+                      : "bg-owl-green/20 text-owl-green border border-owl-green/30 icon-glow-green"
                 }`}
               >
                 {item.step}
               </div>
-              <p className="text-sm font-semibold mb-1">{item.title}</p>
-              <p className="text-xs text-muted-foreground">{item.desc}</p>
+              <p className="text-base font-semibold mb-1">{item.title}</p>
+              <p className="text-sm text-foreground/70">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -754,7 +754,7 @@ function RaceTrack({
     <div className="mb-3 last:mb-0">
       <div className="flex items-center gap-3 mb-1">
         <span
-          className="text-xs font-mono w-28 sm:w-32 shrink-0 truncate"
+          className="text-sm font-mono w-28 sm:w-32 shrink-0 truncate"
           style={{ color }}
         >
           {name}
@@ -762,7 +762,7 @@ function RaceTrack({
         {winner && (
           <Badge
             variant="outline"
-            className="text-[10px] py-0 px-1.5"
+            className="text-[11px] py-0 px-1.5"
             style={{ borderColor: color, color, backgroundColor: `${color}10` }}
           >
             WINNER
@@ -871,7 +871,7 @@ function FeaturesSection() {
   const { ref, visible } = useSectionReveal();
 
   return (
-    <section id="features" ref={ref} className="relative py-20 sm:py-28 px-4">
+    <section id="features" ref={ref} className="relative py-20 sm:py-28 px-4 scroll-mt-20">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(224,64,251,0.03)_0%,transparent_50%)] pointer-events-none" />
 
       <div
@@ -888,7 +888,7 @@ function FeaturesSection() {
               Feature Set
             </span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-foreground/70 max-w-2xl mx-auto">
             Battle-tested through five audit passes. Every feature is production-hardened.
           </p>
         </div>
@@ -912,25 +912,25 @@ function FeatureCard({
 }) {
   const colorMap = {
     cyan: {
-      iconBg: "bg-owl-cyan/10",
+      iconBg: "bg-owl-cyan/20",
       iconColor: "text-owl-cyan",
       borderHover: "hover:border-owl-cyan/30",
       glowHover: "hover:shadow-[0_0_20px_rgba(0,212,255,0.1)]",
-      badge: "border-owl-cyan/20 text-owl-cyan bg-owl-cyan/5",
+      badge: "border-owl-cyan/30 text-owl-cyan bg-owl-cyan/8",
     },
     green: {
-      iconBg: "bg-owl-green/10",
+      iconBg: "bg-owl-green/20",
       iconColor: "text-owl-green",
       borderHover: "hover:border-owl-green/30",
       glowHover: "hover:shadow-[0_0_20px_rgba(16,185,129,0.1)]",
-      badge: "border-owl-green/20 text-owl-green bg-owl-green/5",
+      badge: "border-owl-green/30 text-owl-green bg-owl-green/8",
     },
     magenta: {
-      iconBg: "bg-owl-magenta/10",
+      iconBg: "bg-owl-magenta/20",
       iconColor: "text-owl-magenta",
       borderHover: "hover:border-owl-magenta/30",
       glowHover: "hover:shadow-[0_0_20px_rgba(224,64,251,0.1)]",
-      badge: "border-owl-magenta/20 text-owl-magenta bg-owl-magenta/5",
+      badge: "border-owl-magenta/30 text-owl-magenta bg-owl-magenta/8",
     },
   };
 
@@ -941,14 +941,14 @@ function FeatureCard({
       className={`glass-depth p-5 transition-all duration-300 group ${c.borderHover} ${c.glowHover} hover:scale-[1.02]`}
       style={{ animationDelay: `${index * 80}ms` }}
     >
-      <div className={`w-10 h-10 rounded-xl ${c.iconBg} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
+      <div className={`w-10 h-10 rounded-xl ${c.iconBg} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform group-hover:drop-shadow-[0_0_8px_rgba(0,212,255,0.4)]`}>
         <feature.icon className={`w-5 h-5 ${c.iconColor}`} />
       </div>
-      <h3 className="text-sm font-bold mb-1">{feature.title}</h3>
-      <Badge variant="outline" className={`text-[10px] py-0 px-1.5 mb-2 ${c.badge}`}>
+      <h3 className="text-base font-bold mb-1">{feature.title}</h3>
+      <Badge variant="outline" className={`text-[11px] py-0 px-1.5 mb-2 ${c.badge}`}>
         {feature.subtitle}
       </Badge>
-      <p className="text-xs text-muted-foreground leading-relaxed">{feature.desc}</p>
+      <p className="text-sm text-foreground/70 leading-relaxed">{feature.desc}</p>
     </div>
   );
 }
@@ -975,7 +975,7 @@ function TimelineSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section id="timeline" ref={ref} className="relative py-20 sm:py-28 px-4">
+    <section id="timeline" ref={ref} className="relative py-20 sm:py-28 px-4 scroll-mt-20">
       <div
         className={`max-w-6xl mx-auto transition-all duration-1000 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -990,7 +990,7 @@ function TimelineSection() {
               Version Timeline
             </span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-foreground/70 max-w-2xl mx-auto">
             From base infrastructure to five-pass audit final. Every version battle-tested.
           </p>
         </div>
@@ -1038,16 +1038,16 @@ function TimelineSection() {
               >
                 <div className="flex items-center gap-2 mb-2">
                   <div className={`w-3 h-3 rounded-full ${s.dot}`} />
-                  <Badge variant="outline" className={`text-[10px] py-0 ${s.badge}`}>
+                  <Badge variant="outline" className={`text-[11px] py-0 ${s.badge}`}>
                     v{v.version}
                   </Badge>
                 </div>
-                <p className="text-sm font-bold mb-1">{v.codename}</p>
-                <p className="text-[10px] text-muted-foreground mb-2 flex items-center gap-1">
+                <p className="text-base font-bold mb-1">{v.codename}</p>
+                <p className="text-[11px] text-foreground/60 mb-2 flex items-center gap-1">
                   <Clock className="w-3 h-3" />
                   {v.date}
                 </p>
-                <p className="text-xs text-muted-foreground leading-relaxed">{v.key}</p>
+                <p className="text-sm text-foreground/60 leading-relaxed">{v.key}</p>
               </div>
             );
           })}
@@ -1075,7 +1075,7 @@ function QuickInstallSection() {
   }, []);
 
   return (
-    <section id="install" ref={ref} className="relative py-20 sm:py-28 px-4">
+    <section id="install" ref={ref} className="relative py-20 sm:py-28 px-4 scroll-mt-20">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(16,185,129,0.04)_0%,transparent_60%)] pointer-events-none" />
 
       <div
@@ -1092,7 +1092,7 @@ function QuickInstallSection() {
               Quick Install
             </span>
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-foreground/70">
             One line. That&apos;s all it takes.
           </p>
         </div>
@@ -1150,15 +1150,15 @@ function QuickInstallSection() {
             { flag: "--with-providers", desc: "Configure provider auth" },
           ].map((opt) => (
             <div key={opt.flag} className="glass p-3 text-center">
-              <code className="text-xs font-mono text-owl-cyan">{opt.flag}</code>
-              <p className="text-[10px] text-muted-foreground mt-1">{opt.desc}</p>
+              <code className="text-sm font-mono text-owl-cyan">{opt.flag}</code>
+              <p className="text-xs text-foreground/60 mt-1">{opt.desc}</p>
             </div>
           ))}
         </div>
 
         {/* More options */}
         <div className="glass-subtle p-4 mt-6 rounded-xl">
-          <p className="text-xs text-muted-foreground mb-2 font-semibold">More install options:</p>
+          <p className="text-xs text-foreground/60 mb-2 font-semibold">More install options:</p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {[
               { flag: "--upgrade", desc: "Upgrade existing" },
@@ -1167,8 +1167,8 @@ function QuickInstallSection() {
               { flag: "--uninstall", desc: "Remove install" },
             ].map((opt) => (
               <div key={opt.flag} className="flex flex-col gap-0.5">
-                <code className="text-[10px] font-mono text-owl-green">{opt.flag}</code>
-                <span className="text-[10px] text-muted-foreground">{opt.desc}</span>
+                <code className="text-xs font-mono text-owl-green">{opt.flag}</code>
+                <span className="text-xs text-foreground/60">{opt.desc}</span>
               </div>
             ))}
           </div>
@@ -1231,7 +1231,7 @@ function FeatureMatrixSection() {
   ];
 
   return (
-    <section id="matrix" ref={ref} className="relative py-20 sm:py-28 px-4">
+    <section id="matrix" ref={ref} className="relative py-20 sm:py-28 px-4 scroll-mt-20">
       <div
         className={`max-w-6xl mx-auto transition-all duration-1000 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -1253,9 +1253,9 @@ function FeatureMatrixSection() {
           <table className="w-full min-w-[700px]">
             <thead>
               <tr className="border-b border-white/5">
-                <th className="text-left text-xs font-semibold text-muted-foreground p-3">Feature</th>
+                <th className="text-left text-xs font-bold text-foreground/90 p-3">Feature</th>
                 {providerData.map((p) => (
-                  <th key={p.provider} className="text-left text-xs font-semibold text-owl-cyan p-3">
+                  <th key={p.provider} className="text-left text-sm font-bold text-owl-cyan p-3">
                     {p.provider}
                   </th>
                 ))}
@@ -1277,9 +1277,9 @@ function FeatureMatrixSection() {
                   key={row.key}
                   className={`border-b border-white/3 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}
                 >
-                  <td className="text-xs font-medium p-3 text-muted-foreground">{row.label}</td>
+                  <td className="text-xs font-semibold text-foreground/80 p-3">{row.label}</td>
                   {providerData.map((p) => (
-                    <td key={`${p.provider}-${row.key}`} className="text-xs p-3">
+                    <td key={`${p.provider}-${row.key}`} className="text-xs text-foreground/80 p-3">
                       {p[row.key]}
                     </td>
                   ))}
@@ -1294,11 +1294,11 @@ function FeatureMatrixSection() {
           <table className="w-full min-w-[600px]">
             <thead>
               <tr className="border-b border-white/5">
-                <th className="text-left text-xs font-semibold text-muted-foreground p-3">Strategy</th>
-                <th className="text-left text-xs font-semibold text-muted-foreground p-3">Description</th>
-                <th className="text-left text-xs font-semibold text-muted-foreground p-3">Use Case</th>
-                <th className="text-left text-xs font-semibold text-muted-foreground p-3">Latency</th>
-                <th className="text-left text-xs font-semibold text-muted-foreground p-3">Cost</th>
+                <th className="text-left text-xs font-bold text-foreground/90 p-3">Strategy</th>
+                <th className="text-left text-xs font-bold text-foreground/90 p-3">Description</th>
+                <th className="text-left text-xs font-bold text-foreground/90 p-3">Use Case</th>
+                <th className="text-left text-xs font-bold text-foreground/90 p-3">Latency</th>
+                <th className="text-left text-xs font-bold text-foreground/90 p-3">Cost</th>
               </tr>
             </thead>
             <tbody>
@@ -1308,20 +1308,20 @@ function FeatureMatrixSection() {
                   className={`border-b border-white/3 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}
                 >
                   <td className="text-xs font-mono font-bold text-owl-green p-3">{s.strategy}</td>
-                  <td className="text-xs p-3">{s.desc}</td>
-                  <td className="text-xs p-3">{s.use}</td>
-                  <td className="text-xs p-3">
+                  <td className="text-xs text-foreground/80 p-3">{s.desc}</td>
+                  <td className="text-xs text-foreground/80 p-3">{s.use}</td>
+                  <td className="text-xs text-foreground/80 p-3">
                     <span
                       className={
                         s.latency === "Lowest"
                           ? "text-owl-cyan font-semibold"
-                          : "text-muted-foreground"
+                          : "text-foreground/60"
                       }
                     >
                       {s.latency}
                     </span>
                   </td>
-                  <td className="text-xs p-3 text-muted-foreground">{s.cost}</td>
+                  <td className="text-xs text-foreground/60 p-3">{s.cost}</td>
                 </tr>
               ))}
             </tbody>
@@ -1373,7 +1373,7 @@ function KnownIssuesSection() {
               Known Issues
             </span>
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-foreground/70">
             Full transparency. Every bug we&apos;ve fixed and every limitation we acknowledge.
           </p>
         </div>
@@ -1403,13 +1403,13 @@ function KnownIssuesSection() {
                   >
                     <Badge
                       variant="outline"
-                      className="text-[10px] py-0 shrink-0 border-owl-green/30 text-owl-green bg-owl-green/5"
+                      className="text-[11px] py-0 shrink-0 border-owl-green/30 text-owl-green bg-owl-green/5"
                     >
                       {bug.id}
                     </Badge>
                     <div className="flex-1 min-w-0">
-                      <p className="text-xs text-foreground/90">{bug.desc}</p>
-                      <p className="text-[10px] text-muted-foreground mt-0.5">
+                      <p className="text-sm text-foreground/80">{bug.desc}</p>
+                      <p className="text-xs text-foreground/60 mt-0.5">
                         Fix: {bug.fix} • {bug.ver}
                       </p>
                     </div>
@@ -1444,7 +1444,7 @@ function KnownIssuesSection() {
                   >
                     <Badge
                       variant="outline"
-                      className={`text-[10px] py-0 shrink-0 ${
+                      className={`text-[11px] py-0 shrink-0 ${
                         issue.status === "Pending"
                           ? "border-yellow-400/30 text-yellow-400 bg-yellow-400/5"
                           : issue.status === "Known"
@@ -1455,8 +1455,8 @@ function KnownIssuesSection() {
                       {issue.status}
                     </Badge>
                     <div className="flex-1 min-w-0">
-                      <p className="text-xs text-foreground/90">{issue.desc}</p>
-                      <p className="text-[10px] text-muted-foreground mt-0.5">
+                      <p className="text-sm text-foreground/80">{issue.desc}</p>
+                      <p className="text-xs text-foreground/60 mt-0.5">
                         Workaround: {issue.workaround}
                       </p>
                     </div>
@@ -1520,7 +1520,7 @@ function Footer() {
               <span className="text-xl">🦉</span>
               <span className="text-lg font-bold text-owl-cyan">OWL-ORCA</span>
             </div>
-            <p className="text-xs text-muted-foreground leading-relaxed">
+            <p className="text-sm text-foreground/60 leading-relaxed">
               Self-hosted AI gateway that aggregates free-tier providers into a single
               OpenAI-compatible API endpoint. Free AI for everyone.
             </p>
@@ -1528,13 +1528,13 @@ function Footer() {
 
           {/* Project */}
           <div>
-            <h4 className="text-sm font-semibold mb-3">Project</h4>
+            <h4 className="text-sm font-bold text-foreground/80 mb-3">Project</h4>
             <div className="space-y-2">
               <a
                 href="https://github.com/marktantongco/owl-orca"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-xs text-muted-foreground hover:text-owl-cyan transition-colors"
+                className="flex items-center gap-2 text-sm text-foreground/60 hover:text-owl-cyan transition-colors"
               >
                 <GithubIcon className="w-3.5 h-3.5" />
                 GitHub Repository
@@ -1543,7 +1543,7 @@ function Footer() {
                 href="https://github.com/marktantongco/owl-orca/blob/main/LICENSE"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-xs text-muted-foreground hover:text-owl-cyan transition-colors"
+                className="flex items-center gap-2 text-sm text-foreground/60 hover:text-owl-cyan transition-colors"
               >
                 <ExternalLink className="w-3.5 h-3.5" />
                 MIT License
@@ -1552,7 +1552,7 @@ function Footer() {
                 href="https://github.com/marktantongco/owl-orca/issues"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-xs text-muted-foreground hover:text-owl-cyan transition-colors"
+                className="flex items-center gap-2 text-sm text-foreground/60 hover:text-owl-cyan transition-colors"
               >
                 <Bug className="w-3.5 h-3.5" />
                 Report an Issue
@@ -1562,13 +1562,13 @@ function Footer() {
 
           {/* Sections */}
           <div>
-            <h4 className="text-sm font-semibold mb-3">Sections</h4>
+            <h4 className="text-sm font-bold text-foreground/80 mb-3">Sections</h4>
             <div className="space-y-2">
               {NAV_ITEMS.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="block text-xs text-muted-foreground hover:text-owl-cyan transition-colors"
+                  className="block text-sm text-foreground/60 hover:text-owl-cyan transition-colors"
                 >
                   {item.label}
                 </a>
@@ -1578,14 +1578,14 @@ function Footer() {
 
           {/* Tech Stack */}
           <div>
-            <h4 className="text-sm font-semibold mb-3">Built With</h4>
+            <h4 className="text-sm font-bold text-foreground/80 mb-3">Built With</h4>
             <div className="flex flex-wrap gap-1.5">
               {["Python 3.10+", "Bash", "asyncio", "httpx", "aiohttp", "systemd", "Fernet"].map(
                 (tech) => (
                   <Badge
                     key={tech}
                     variant="outline"
-                    className="text-[10px] py-0 border-white/10 text-muted-foreground"
+                    className="text-[11px] py-0 border-white/20 text-foreground/70"
                   >
                     {tech}
                   </Badge>
@@ -1597,7 +1597,7 @@ function Footer() {
 
         {/* Bottom bar */}
         <Separator className="my-8 bg-white/5" />
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-foreground/50">
           <p>OWL-ORCA v8.0.0 — Five-Pass-Audit-Final Edition</p>
           <p>
             Stream Racing • Protocol Translation • Safe-Mode • Radix Routing • Circuit Breakers •
@@ -1618,13 +1618,21 @@ export default function HomePage() {
       <NavBar />
       <main className="flex-1">
         <HeroSection />
+        <div className="h-px bg-gradient-to-r from-transparent via-owl-cyan/20 to-transparent my-0" />
         <ArchitectureSection />
+        <div className="h-px bg-gradient-to-r from-transparent via-owl-cyan/20 to-transparent my-0" />
         <StreamRacerSection />
+        <div className="h-px bg-gradient-to-r from-transparent via-owl-magenta/20 to-transparent my-0" />
         <FeaturesSection />
+        <div className="h-px bg-gradient-to-r from-transparent via-owl-green/20 to-transparent my-0" />
         <InfographicSection />
+        <div className="h-px bg-gradient-to-r from-transparent via-owl-green/20 to-transparent my-0" />
         <TimelineSection />
+        <div className="h-px bg-gradient-to-r from-transparent via-owl-cyan/20 to-transparent my-0" />
         <QuickInstallSection />
+        <div className="h-px bg-gradient-to-r from-transparent via-owl-cyan/20 to-transparent my-0" />
         <FeatureMatrixSection />
+        <div className="h-px bg-gradient-to-r from-transparent via-yellow-400/20 to-transparent my-0" />
         <KnownIssuesSection />
       </main>
       <Footer />

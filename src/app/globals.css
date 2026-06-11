@@ -68,7 +68,7 @@
   --secondary: #1a1a3e;
   --secondary-foreground: #e8e8f0;
   --muted: #1a1a3e;
-  --muted-foreground: #8888aa;
+  --muted-foreground: #a0a0c0;
   --accent: #10b981;
   --accent-foreground: #0a0a1a;
   --destructive: #ef4444;
@@ -285,7 +285,7 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 16px;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.4),
@@ -317,6 +317,52 @@
 
 .text-glow-magenta {
   text-shadow: 0 0 20px rgba(224, 64, 251, 0.5), 0 0 40px rgba(224, 64, 251, 0.2);
+}
+
+/* Icon glow utilities */
+.icon-glow-cyan {
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.15);
+}
+
+.icon-glow-green {
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.4), 0 0 20px rgba(16, 185, 129, 0.15);
+}
+
+.icon-glow-magenta {
+  box-shadow: 0 0 8px rgba(224, 64, 251, 0.4), 0 0 20px rgba(224, 64, 251, 0.15);
+}
+
+/* Section separator gradient line */
+.section-separator {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0, 212, 255, 0.2), transparent);
+  margin: 0;
+}
+
+/* Animated data flow dots for flow diagrams */
+.data-flow-dots {
+  position: relative;
+}
+
+.data-flow-dots::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent);
+  animation: data-flow 2s ease-in-out infinite;
+}
+
+/* Flow arrow pulse animation */
+@keyframes flow-arrow-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.flow-arrow-animated {
+  animation: flow-arrow-pulse 2s ease-in-out infinite;
 }
 
 /* Custom scrollbar */
