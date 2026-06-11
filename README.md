@@ -6,11 +6,13 @@
 
 **Free AI for everyone. Race multiple providers. First byte wins.**
 
-[![Version](https://img.shields.io/badge/version-8.0.0-blue.svg)](https://github.com/marktantongco/owl-orca)
+[![Version](https://img.shields.io/badge/version-8.0.0-blue.svg)](https://github.com/marktantongco/owl-orca-v2)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Shell](https://img.shields.io/badge/bash-5.0%2B-orange.svg)](https://www.gnu.org/software/bash/)
 [![Python](https://img.shields.io/badge/python-3.10%2B-yellow.svg)](https://www.python.org/)
-[![RAM](https://img.shields.io/badge/RAM-8GB%20Optimized-purple.svg)](https://github.com/marktantongco/owl-orca)
+[![RAM](https://img.shields.io/badge/RAM-8GB%20Optimized-purple.svg)](https://github.com/marktantongco/owl-orca-v2)
+[![UI](https://img.shields.io/badge/UI-Vivid%20v2-cyan.svg)](https://owl-orca-v2.vercel.app)
+[![Deploy](https://img.shields.io/badge/Vercel-Live-000000?logo=vercel)](https://owl-orca-v2.vercel.app)
 
 </div>
 
@@ -453,7 +455,25 @@ The script automatically detects the system architecture and libc variant (`musl
 
 This repo includes a **Next.js landing page** at the repo root — a kinetic autopoiesis UI with stream racing visualization. Deployed on Vercel.
 
-**Live site**: [owl-orca-web.vercel.app](https://owl-orca-web.vercel.app)
+**Live site**: [owl-orca-v2.vercel.app](https://owl-orca-v2.vercel.app)
+
+### v2 Vivid UI Upgrades
+
+This v2 edition features a comprehensive contrast, typography, and visual upgrade over the original:
+
+| Category | v1 (Original) | v2 (Vivid Edition) |
+|----------|---------------|-------------------|
+| Icon visibility | `bg-current/10` nearly invisible | `bg-current/20` + drop-shadow glow effects |
+| Flow arrows | `text-muted-foreground/40` unreadable | `text-owl-cyan/50` with animated pulse |
+| Feature descriptions | `text-xs text-muted-foreground` | `text-sm text-foreground/70` vivid & readable |
+| Sublabels | `text-[10px]` too small | `text-xs` minimum with `text-foreground/60` |
+| Nav items | Barely visible on glass | `text-foreground/70` with bright hover |
+| Table headers | `text-muted-foreground` dim | `font-bold text-foreground/90` crisp |
+| Glass borders | 0.1 opacity | 0.14 opacity for depth |
+| Muted text color | `#8888aa` low contrast | `#a0a0c0` significantly more readable |
+| Section separators | None | Gradient cyan→transparent lines |
+| Icon glow effects | None | `icon-glow-cyan/green/magenta` utilities |
+| Scroll offset | No offset (nav covers) | `scroll-mt-20` on all sections |
 
 ### Design System
 
@@ -462,6 +482,7 @@ This repo includes a **Next.js landing page** at the repo root — a kinetic aut
 | Kinetic Spatial | 40% | Floating particles, animated owl eyes, race track animations, parallax drift |
 | Autopoietic Canvas | 35% | Breathing orbs, morphing blobs, organic gradient shifts |
 | Glass Depth | 25% | Frosted glass cards, layered blur, depth shadows |
+| Vivid Contrast | Enhancement | Icon glow effects, brighter muted text, gradient separators, larger typography |
 
 ### Quick Start
 
@@ -482,8 +503,8 @@ npm start        # production server on port 3000
 - Next.js 16 (App Router, TypeScript 5)
 - Tailwind CSS 4 with custom animations
 - shadcn/ui components
-- Framer Motion for scroll reveals
-- Vercel deployment
+- Lucide React icons with glow effects
+- Vercel deployment (CI/CD auto-deploy from main)
 
 ---
 
@@ -547,8 +568,10 @@ MIT License — Free for personal and commercial use.
 
 <div align="center">
 
-**OWL-ORCA v8.0.0** — Five-Pass-Audit-Final Edition
+**OWL-ORCA v8.0.0** — Five-Pass-Audit-Final Edition — Vivid UI v2
 
 *Stream Racing * Protocol Translation * Safe-Mode * Radix Routing * Circuit Breakers * Zero-Downtime*
+
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?logo=vercel)](https://owl-orca-v2.vercel.app)
 
 </div>
